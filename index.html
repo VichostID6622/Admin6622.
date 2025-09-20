@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <script defer src="script9999.js"></script>
+    </head>
+    <style>
+    html{
+        scroll-behavior: smooth;
+    }
+
+body {
+    background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.body02{
+  background-color: black;
+  overflow: hidden;
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  height: 79px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+  justify-content: right;
+  border: 2px solid aqua;
+
+}
+
+ul li a {
+  display: block;
+  font-family: Arial, sans-serif;
+  color: whitesmoke;
+  border-radius: 20%;
+  padding: 5px;
+  margin: 0px 10px;
+  gap: 20px;
+  text-decoration: none;
+
+}
+
+ul li a:hover {
+  color: aqua;
+}
+h2 ,h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aqua;
+    text-decoration: dotted;
+}
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+:root {
+	--x: 0;
+	--y: 0;
+	--xp: 0; 
+	--yp: 0;
+	--hue: calc(0 + (var(--xp) * 500));
+	--bg: hsl(0 0% 10%);
+	--size: 100px;
+	--glow: radial-gradient(50% 50% at center,
+			hsl(var(--hue) 80% 85%),
+			hsl(var(--hue) 80% 70%),
+			transparent) calc((var(--x) * 1px) - (var(--size) * 0.5)) calc((var(--y) * 1px) - (var(--size) * 0.5)) / var(--size) var(--size) no-repeat fixed;
+}
+.controls {
+	top: 2rem;
+	right: 2rem;
+}
+
+
+button {
+	border-radius: 1rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 0.1ch;
+	background: var(--bg);
+	border: 4px solid transparent;
+	box-shadow: 0 1px hsl(0 0% 100% / 0.15) inset;
+	cursor: pointer;
+  background: linear-gradient(var(--bg), var(--bg)) padding-box,
+              var(--glow),
+              linear-gradient(black, black) border-box;
+	transition: background-size 0.24s;
+	touch-action: none;
+  position: relative;
+	padding: 0.5rem 0.7rem;
+}
+
+button::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	box-shadow: 0 1px hsl(0 0% 100% / 0.15) inset;
+	background: var(--bg);
+	z-index: 2;
+	border-radius: 1rem;
+}
+button span {
+	background: var(--glow), black;
+	background-clip: text;
+	color: transparent;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+  position: relative;
+	inset: 0;
+}
+:root:has(button:active) {
+	--size: 300px;
+}
+
+button::after {
+	content: "";
+	position: absolute;
+	inset: -4px;
+	filter: blur(20px);
+	border: 4px solid transparent;
+	background: var(--glow);
+	border-radius: 1rem;
+}
+
+button:hover::after {
+  color: aqua;
+  background-color: #03222a;
+}
+
+.edu-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    grid-template-rows: 1fr 1fr;    /* Two rows */
+    gap: 20px; /* Space between quadrants */
+    width: 80%; /* Adjust as needed */
+    max-width: 900px; /* Max width for the container */
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.background01 {
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    min-height: 150px; /* Ensure consistent height */
+    position: relative;
+}
+
+        .background01:hover {
+            box-shadow: 0 0 30px 10px #cdd6fd;
+        }
+        
+        .bca {
+          background-color: black;
+        }
+
+        .puc {
+          background-color: black;
+        }
+        .puc :hover {
+          box-shadow:0 0 30px 10px #dbdbdb;
+
+        }
+
+        .ths {
+          background-color: black;
+        }
+
+
+        .background02 {
+          font-family: Arial, Helvetica, sans-serif;
+          display: flex;
+          background-color: black;
+          flex-direction: column;
+          border: 2px solid #dbdbdb;
+          border-radius: 8px;
+          width: 1020px;
+          padding: 20px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+          text-align: left;
+          margin: 30px;
+          align-items: left;
+          }
+
+          .background11 {
+          display: flex;
+          background-color: black;
+          flex-direction: column;
+          border: 3px solid white;
+          border-radius: 8px;
+          width: 1000px;
+          padding: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+          text-align: left;
+          margin: 20px auto;
+          align-items: left;
+          }
+
+         .background11:hover {
+            box-shadow: 0 0 1px 1px white;
+        }
+
+
+        .background02:hover {
+          box-shadow: 0 0 2px 2px purple;
+           
+        }
+
+         .background05 {
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: 300px;
+          display: flex;
+          align-items: right;
+          justify-content: right;
+          background-color: black;
+          flex-direction: column;
+          border: 2px solid #dbdbdb;
+          border-radius: 8px;
+          width: 400px;
+          padding: 20px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+          text-align: left;
+          margin: 20px auto;
+          align-items: left;
+          }
+
+        .background05:hover {
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+           transform: scale(1.05);
+             box-shadow: 0 0 2px 2px whitesmoke;
+        }
+
+        .background08 {
+         display: flex;
+          align-items: right;
+          justify-content: right;
+          background-color: black;
+          flex-direction: column;
+          border: 1px solid #dbdbdb;
+          border-radius: 8px;
+          width: 270px;
+          height: 75%;
+          padding: 20px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+          text-align: center;
+          margin: 20px auto;
+          align-items: left;
+          animation: zoomIn 4s ease-in-out infinite;
+          animation-delay: 3s;
+          }
+
+        .background08:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); /* Optional: makes it pop out a bit */
+            box-shadow: 0 0 10px 5px #a3c4dc
+        }
+
+
+        .background03 , .background07{
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: 300px;
+          display: flex;
+          background-color: black;
+          flex-direction: column;
+          border: 2px solid #dbdbdb;
+          border-radius: 8px;
+          width: 490px;
+          padding: 20px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+          text-align: left;
+          margin: 20px auto;
+          align-items: left;
+          }
+
+        .background03:hover {
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+           transform: scale(1.05);
+            box-shadow: 0 0 2px 2px whitesmoke;
+        }
+
+        .background07:hover {
+            box-shadow: 0 0 30px 10px #342263;
+        }
+
+        .background04 {
+          display: flex;
+          align-items: top;
+          justify-content: center;
+          text-align: top;
+          background-color: black;
+          flex-direction: column;
+          border-radius: 8px;
+          width: 500px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+          text-align: left;
+          margin: 20px auto;
+          }
+
+        .background04:hover {
+            box-shadow: 0 0 2px 2px black;
+        }
+
+        .background10 {
+          display: flex;
+          background-color: black;
+          flex-direction: column;
+          border: 2px solid #dbdbdb;
+          border-radius: 8px;
+          width: 400px;
+          padding: 10px 25px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+          text-align: center;
+          margin: 10px auto;
+          align-items: right;
+          animation: zoomInt 4s ease-in-out infinite;
+          animation-delay: 3s;
+          }
+
+        .background10:hover {
+           float: center;
+           box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+           transform: scale(1.05);
+            box-shadow: 0 0 2px 2px whitesmoke;
+        }
+
+
+ .edutxt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    color: aqua;
+}
+
+
+
+.abouttxt {
+  color: aqua;
+  align-items: center;
+  text-align: left;
+  font-size: 19px;
+}
+
+.abouttxt991 {
+  color: aqua;
+  width: 90%;
+  align-items: center;
+   justify-content: center;
+   text-align: left;
+  font-size: 19px;
+}
+
+.abouttxt990 {
+  color: aqua;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+   text-align: left;
+  font-size: 19px;
+  padding: 20px;
+}
+
+.abouttxt11 {
+  color: aqua;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+  text-align: center;
+  font-size: 19px;
+
+}
+
+.abouttxt999{
+  margin:0px;
+  font-family:'Roboto';
+  text-align:center;
+}
+
+#container55 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:aqua;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight:bold;
+  padding-top: 20px;
+  position: relative;
+  width:100%;
+  display:block;
+}
+
+#flip {
+  height: 50px;
+  overflow:hidden;
+}
+
+#flip > div > div {
+  color: white;
+  padding: 5px;
+  height: 50px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  display:inline-block;
+}
+
+#flip div:first-child {
+  animation: show 5s linear infinite;
+}
+
+#flip div div {
+  background:#42c58a;
+}
+#flip div:first-child div {
+  background:#4ec7f3;
+}
+#flip div:last-child div {
+  background:#DC143C;
+}
+
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+
+
+.abouttxt01, .abouttxt04, .abouttxt08 {
+  color: aqua;
+  align-items: left;
+ }
+
+.abouttxt03 {
+  color: aqua;
+  align-items: center;
+  text-align: center;
+}
+
+.abouttxt02 {
+  font-size: 45px;
+  text-align: center;
+  align-items: baseline;
+}
+
+.container {
+  display: flex;
+  text-align: left;
+}
+
+
+.container::after, .container::before {
+          content: '';
+          position: absolute;
+          height: 445px;
+          width: 1003px;
+          background-image: conic-gradient(red, blue, pink, green, purple, yellow, red);
+          top: 3400px;
+          left: 50%;
+          translate: -50% -50%;
+          z-index: -1;
+          padding: 20px;
+          border-radius: 10px;
+        }
+
+        .container::before {
+          filter:blur(1.5rem);
+          opacity: 0.2;
+        }
+
+
+.container1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Three columns */
+}
+
+ ol {
+      list-style-type: disc;
+      margin: 35px;
+      padding: 0;
+    }
+    li {
+      margin: 5px 0; 
+      font-size: 20px;
+    }
+
+    ol li::marker {
+  color: aqua;
+}
+
+
+
+.details{
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  color: aqua;
+}
+
+.body01 {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   
+}
+
+.body05 {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   
+}
+
+.swot-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    height: auto;
+    width: 80%;
+    gap: 20px; 
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.swot-item {
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    height: 100%; /* Ensure consistent height */
+    position: relative;
+}
+
+.swot-item h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+    color: #333;
+}
+
+
+.strengths {
+    background-color: black; 
+}
+
+.strengths:hover {
+  float: right;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); /* Optional: makes it pop out a bit */
+     box-shadow: 0 0 4px 4px #dbdbdb;
+          
+}
+
+.weaknesses {
+    background-color:  black;
+    text-align: left;
+    align-items: left;
+    justify-content: left;
+    margin: 0px 0px 10px 0px;
+}
+
+.weaknesses:hover {
+  float: right;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); /* Optional: makes it pop out a bit */
+    box-shadow: 0 0 4px 4px white;
+}
+
+.opportunities {
+  background-color: black;
+}
+
+@font-face {
+  font-family: 'Prototype';
+  src: url(Prototype.ttf);
+}
+.home1{
+  display: flex;
+  font-family: 'prototype';
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+          background-color: black;
+          flex-direction: column;
+          border-radius: 8px;
+          width: 1500px;
+          text-align: right;
+          align-items: right;
+          padding:50 10px 0;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.hero-content {
+    width: 2500px;
+}
+
+.hero-content h1 {
+    font-size: 4.5rem;
+    text-align: left;
+    margin: -3px 0;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    text-align: left;
+    margin: 0;
+    color: #00e5ff;
+}
+
+.hero-content h3 {
+  color: white;
+    font-size: 2rem;
+    font-weight: normal;
+    align-items: left;
+    text-align: left;
+}
+
+.hero-content, .highlight{
+  font-size: 3.5rem;
+    color: #00e5ff;
+}
+
+.hero-content p {
+  font-size: 16px;
+    line-height: 2.5;
+    align-items: left;
+    text-align: left;
+
+}
+
+.social-icons {
+  align-items: left;
+  text-align: left;
+  justify-content: left;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 20px;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+    align-items: left;
+    margin: 30px;
+    animation: zoomIn 4s ease-in-out infinite;
+    animation-delay: 5s;
+}
+
+
+.btn:hover {
+    background-color: aqua
+}
+
+.hero-image img {
+    max-width: 80%;
+    align-items: right;
+    justify-content: right;
+    height: auto;
+    margin: 30px;
+    opacity: 0;
+    animation: floatImage 1s ease forwards, zoomInn 4s ease-in-out infinite;
+    animation-delay: 0.5s, 3s;
+  }
+
+.b1 {
+  font-size: 2rem;
+  color: white;
+}
+
+@keyframes zoomIn {
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-15px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomInt {
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-8px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatImage {
+  0%{
+    transform: scale(0);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+}
+
+@keyframes zoomInn {
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-30px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomInnn {
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-19px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+.maincont99 {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black; /* Light grey background */
+    margin: 0;
+}
+
+.swot-container99 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    grid-template-rows: 1fr 1fr;    /* Two rows */
+    gap: 30px; /* Space between quadrants */
+    width: 100%; /* Adjust as needed */ /* Max width for the container */
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.swot-item99 {
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    width: 90%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    min-height: 150px; /* Ensure consistent height */
+    animation: zoomInnn 4s ease-in-out infinite;
+    animation-delay: 2s;
+}
+
+.swot-item99 h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+    color: #333;
+}
+
+
+
+/* Specific colors for each quadrant */
+.strengths99 {
+    background-color: black; /* Light blue */
+     border: 1px solid #dbdbdb;
+}
+
+.strengths99:hover {
+  box-shadow: 0 0 4px 4px #dbdbdb;
+}
+
+.weaknesses99 {
+    background-color: black; /* Light orange */
+     border: 1px solid #dbdbdb;
+}
+
+.weaknesses99:hover {
+    box-shadow: 0 0 4px 4px #dbdbdb;
+}
+
+.opportunities99 {
+    background-color: black; /* Light green */
+     border: 1px solid #dbdbdb;
+}
+
+.opportunities99:hover{
+    box-shadow: 0 0 4px 4px #dbdbdb;
+}
+
+.threats99 {
+    background-color: black; /* Light red/pink */
+}
+
+.background08 a{
+  text-decoration: none;
+}
+
+.ccright {
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  height: 100px; 
+
+}
+
+@property --angle {
+  syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.background02::after, .background02:before {
+  --angle: 0deg;
+          content:'';
+          position: absolute;
+          height: 510px;
+          width: 985px;
+          background-image: conic-gradient(from var(--angle), transparent 70%, rgb(255, 0, 255));
+          top: 2702px;
+          left: 518px;
+          translate: -50% -50%;
+          z-index: -1;
+          padding: 20px;
+          border-radius: 10px;
+          animation: 2s spin linear infinite;
+        }
+
+        .background02::before {
+          filter: blur(1.5rem);
+          opacity: 0.2;
+        }
+
+        @keyframes spin {
+          from {
+            --angle: 0deg;
+          }
+          to {
+            --angle: 360deg;
+          }
+        }
+
+
+
+</style>
+</head>
+<body>
+ <div class="body02">
+<ul>
+  <li><button><span style="color:aqua;"><a href="#home">Home</a></span></button></li>
+  <li><button><span style="color:aqua;"><a href="#education">Education</a></span></button></li>
+  <li><button><span style="color:aqua;"><a href="#skills">Skill Set</a></span></button></li>
+  <li><button><span style="color:aqua;"><a href="#about">About</a></span></button></li>
+  <li><button><span style="color:aqua;"><a href="#contact">Contact</a></span></button></li>
+</ul></div>
+ <div class="main" id="home">
+  <br>
+        <h1>HOME</h1>
+        <div class="home1">
+        <main class="hero">
+        <div class="hero-content">
+            <h2><span style="color: white;" >Hello, It's Me</h2></span>
+            <h1>Vignesh P</h1>
+            <h3>And I'm a &emsp13; <span class="highlight">BCA Student</span></h3>
+            <p><span style="color: aqua; font-family: Arial, Helvetica, sans-serif;">"A focused and objective programmer with strong problem-solving skill. Student at CMR University with expertise in <br>Web Technology&emsp;|&emsp; Data Structure&emsp;|&emsp; Operating system & Linux &emsp;|&emsp; OOPs using JAVA&emsp; |&emsp; Database Management System<br>driven by critical thinking and a passion for creating impactful solutions."
+            </span></p>
+            <a href="index.html" target="_blank" class="btn">VIEW RESUME</a>
+            <a href="#contact" class="btn"> GET IN TOUCH</a>
+        </div>
+        <div class="hero-image">
+            <img src="20250917_182123.png" alt="bitemoji">
+        </div>
+      </main>
+ </div>
+        </div>
+
+
+</span></p>
+
+
+ </div>
+  </div>
+
+    <div class="main" id="education">
+<h1>Education</h1><br><br>
+<div class="maincont99">
+<div class="swot-container99">
+        <div class="swot-item99 strengths99">
+           <div class="edutxt"><b>BCA</b></div>
+  <b><span style="color: aqua; font-size: 30px;">Bachelors in Computer Application(BCA)</span></b>
+  <b><span style="color: white; font-size: 20px; letter-spacing: 0.5px;"><b>Institution: CMR University</b>, Bangalore, Karnataka.<br>Year: 2024 - 2027<br></span></b>
+        </div>
+        <div class="swot-item99 weaknesses99">
+           <div class="edutxt"><b>II PUC</b></div>
+  <b><span style="color: aqua; font-size: 40px;">CEBA</span></b>
+  <b><span style="color: white; font-size: 15px;"><b>Institution: Seshadripuram composite PU College</b>&emsp13;,Bangalore, Karnataka.<br>Year: 2022 - 2024</span></b>
+        </div>
+        <div class="swot-item99 opportunities99">
+           <div class="edutxt"><b>10th Grade</b></div>
+  <b><span style="color: aqua; font-size: 30px;">ICSE Syllabus</span></b>
+  <h3><span style="color: white; font-size: 20px; "><b>Institution: Tunbridge High School</b>&emsp13;,Bangalore, Karnataka.<br>Year: 2012 - 2022<br>
+  </span></h3>
+        </div>
+        <div class="swot-item99 threats99">
+            <!-- Add your threats here -->
+        </div>
+    </div>
+</div>
+    </div>
+
+
+<div class="main" id="skills">
+       <h1><span style="color: aqua;">Skill </span><span style="color: white;">Set</span></h1>
+         <div class="body05">
+           <div class="abouttxt991">
+            <div class="abouttxt990">
+              <b>🖊 My Philosophy:</b><br>
+        <b><span style="color: aqua;">&emsp;&emsp;&emsp;&emsp;"My key strengths are my problem-solving and critical thinking abilities, This allows me to find unique solutions to complex issues.<br>&emsp;&emsp;&emsp;&emsp13;&emsp13; I combine this with strong communication skills, which helps me interact effectively with others, understand their needs, and work<br>&emsp;&emsp;&emsp;&emsp13;&emsp13; toward a mutually satisfying outcome. I always remain open-minded and ensure my opinions don't interfere with finding the best<br>&emsp;&emsp;&emsp;&emsp13;&emsp13; solution, and I maintain an unbiased perspective in all situations."
+          </span></b></div>
+    <div class="swot-container">
+        <div class="swot-item strengths">
+            <h2><span style="color: aqua">Technical</span>&emsp13;<span style="color: white">Skills</span></h2>
+            <b><span style="color: white";>
+              <ol>
+                <li>Programming Languages: <span style="color: aqua"> Java, C, C++. </span></li><br>
+                <li>Concepts:<br><span style="color: aqua"> Data Structures, Object-Oriented Programming (OOP), Operating Systems.</span></li><br>
+                <li>Web Technologies: <br><span style="color: aqua"> HTML, CSS, JavaScript.</span></li><br>
+                 <li>Software & Tools:<br> <span style="color: aqua"> Linux, photo and video editing tools (PixelLab,CapCut,Inshot,KineMaster). </span></li>
+              </ol>
+                </span></b>
+        </div>
+        <div class="swot-item weaknesses">
+          <h2><span style="color:aqua";>Soft</span>&emsp13;<span style="color:white">Skills</span></h2>
+          <b><span style="color: white";>
+          <ol>
+            <li>Problem &emsp13;<span style="color: aqua">Solving</span></li><br>
+            <li>Critical &emsp13;<span style="color: aqua">Thinking</span></li><br>
+            <li>Leadership</li><br>
+            <li>Effective &emsp13;<span style="color: aqua">Communication</span></li><br>
+            <li>Objectivity &&emsp13;<span style="color: aqua">Fairness</span></li><br>
+            <li>Focused &&emsp13;<span style="color: aqua">Determined Personality</span></li>
+          </ol>
+        </span></b>
+        </div>
+    </div>
+         </div>
+         </div>
+       </div>
+</div>
+<br><br><br>
+          </div>
+
+          <div class="main" id="about">
+        <h1><span style="color: aqua;">About<span style="color: white;"> Me</span></h1>
+        <div class="container">
+        <div class="background02">
+        <div class="abouttxt"><b>👨‍💻 <span style="color: aqua;">Career</span><span style="color: white;"> Objective:</span></b><br>
+          <b><span style="color: aqua;">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;To leverage my passion for problem-solving and innovation by applying learned<br> &emsp;&emsp;&emsp13;&emsp;programming skills to develop efficient and creative solutions. I aim to contribute to a dynamic<br>&emsp;&emsp;&emsp13;&emsp;team where I can continuously learn and grow, driving new and innovative projects that make a<br>&emsp13;&emsp;&emsp13;&emsp14;&emsp13;&emsp;dynamic impact.</span></b>
+    </div>
+    <div class="container">
+    <div class="background03">
+    <div class="abouttxt01"><b>🎯 Hobbies & Interests:</b><br>
+        <b><span style="color: aqua;">
+          <ol>
+            <li>Volunteering and Community Service</li>
+            <li>Photography and Videography</li>
+            <li>Travelling</li>
+            <li>Gaming & Sports</li>
+            <li>Editing</li>
+            <li>Music Visualization. (DIY programming)</li>
+          </ol>
+        </span></b>
+    </div>
+    </div>
+         <div class="background05">
+    <div class="abouttxt03"><b>COMING SOON</b><br>
+        <b><span style="color: aqua;"> </span></b>
+    </div>
+    </div>
+        </div>
+        </div>
+
+
+        <div class="background04">
+          <div class="abouttxt02"><b><span style="color: aqua; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ">QUOTE</span></b><br>
+            <div class="background10">
+          <div class="details"><b><span style="color: aqua;">"If we want to break the system, first understand the system."</span></b></div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <div class="main" id="contact">
+        <h1><span style="color: aqua;">Get in </span><span style="color: white;">Touch </span></h1>
+        <div class="container">
+        <div class="background11">
+        <div class="abouttxt11">
+           <div id="container55">
+             Let's Connect and Make<br>
+             <div id="flip">
+              <div><div>wOrK</div></div>
+              <div><div>Ideas</div></div>
+              <div><div>Everything</div></div>
+            </div>AweSoMe and amazing together.
+          </div><br>
+    </div>
+    <div class="container">
+    <div class="background08">
+    <div class="abouttxt08">
+     <img src="icons8-phone-100.png" alt="Description"><br>
+     <b><span style="color: aqua; font-family: Arial, Helvetica, sans-serif;">Phone<br>9380356694</span></b>
+    </div>
+    </div>
+    <a href="https://www.linkedin.com/in/vignesh-p-47b399331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+         <div class="background08">
+    <div class="abouttxt08">
+       <img src="icons8-linked-in-100.png" alt="Description"><br>
+        <b><span style="color: aqua; font-family: Arial, Helvetica, sans-serif; text-decoration: none;">LinkedIn<br>Connect with Me</b></span>
+        </span></p></div></a>
+    </div>
+    <a href="mailto:vigneshblrind@gmail.com" target="_blank">
+     <div class="background08">
+    <div class="abouttxt08">
+      <img src="icons8-external-link-100.png" alt="Description"><br>
+        <b><span style="color: aqua; font-family: Arial, Helvetica, sans-serif; text-decoration: none;">Email<br>vigneshblrind@gmail.com</b></span>
+     </div></a>
+     </div>
+        </div>
+        </div>
+         <br>
+        </div> 
+      </div> 
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="main" id="cright">
+      <div class="ccright">
+        © 2025 Admin6622 Portfolio. Built with Passion for Innovation.</span></b></div>
+      </div>
+      
+</body>
+</html>
